@@ -112,6 +112,7 @@ Dashboards help management see overall performance and stock levels at a glance.
 - **Dynamic Dashboards**: Show data relevant to the user who’s logged in (e.g., store manager only sees their location).
 - **Lightning App Page**: Embed a dashboard or charts on a custom Lightning page for the Inventory object.
 - **Schedule Dashboard Refresh**: Have the dashboard email out a snapshot daily/weekly to managers.
+- **Importing pre-existing data to use in your app**: Grab relevant information from an existing dataset and import it into your Salesforce app. Example: [Download the Grocery Store Dataset from here](https://www.kaggle.com/datasets/bhavikjikadara/grocery-store-dataset). Then, modify the data to only include fields that map to your Salesforce object fields. Then, use the Data Import wizard or Data Loader to import the records. 
 
 ---
 
@@ -122,7 +123,7 @@ In your **Trailhead Playground**:
 1. **Add Sample Data**:
     
     - Create ~5 Inventory records covering different categories, e.g., Food items like apples, Beverage items like soda, Household items like cleaning supplies, etc.
-    - Enter realistic `Current Stock Level` and `Reorder Threshold` values.
+    - Enter realistic `Current Stock Level` and `Reorder Threshold` values depending on the product. Example: a reorder threshold of 100 would make sense for apples, but not for an [outdoor Weber grill](https://www.kingsoopers.com/p/weber-genesis-s-335-outdoor-stainless-steel-3-burner-natural-gas-grill-silver/0007792417465?fulfillment=PICKUP).
 2. **Trigger the Automation**:
     
     - Manually lower an item’s `Current Stock Level` below the threshold.
